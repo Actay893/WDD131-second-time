@@ -1,35 +1,45 @@
 body {
-    font-family: "Times New Roman", Times, serif;
+    background-color: #ddd;
     font-size: 20px;
-    line-height: 1.5;
+}
+#content{
+    max-width: 60%;
+    border: 1px solid darkgrey;
+    margin: 40px auto;
+    padding: 50px;
+}
+
+p {
+    color: #035f9c;
+    font-size: 1.3em;
+}
+
+hr {
+    height: 3px;
+    background-color: #035f9c;
+    width: 80%;
+}
+
+h1, h2, p{
     text-align: center;
+    margin-top: 50px;
 }
-
-.dark {
-    background-color: #333;
-    color: white;
-}
-
-.dark h2 {
-    color: rgb(160, 212, 237);
-}
-
-header h1, header h2 {
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-header h2 {
-    color: #006EB6;
-}
-
-main {
-    max-width: 600px;
+#logos {
+    text-align: center;
+}  
+img {
+    width: 50%;
     margin: 0 auto;
-    text-align: left;
 }
 
-footer img {
-    width: 150px;
-    margin-top: 22px;
+#topics {
+    line-height: 1.5em;
+    margin: 0 auto;
+    width: 55%;
 }
+
+.list{
+    list-style-type: none;
+}
+
+
