@@ -21,6 +21,7 @@ header h1, header h2 {
 
 header h2 {
     color: #006EB6;
+    font-size: 15px;
 }
 
 main {
@@ -32,4 +33,11 @@ main {
 footer img {
     width: 150px;
     margin-top: 20px;
+}
+
+#main{
+    max-width: 60%;
+    border: 1px solid darkgrey;
+    margin: 40px auto;
+    padding: 50px;
 }
