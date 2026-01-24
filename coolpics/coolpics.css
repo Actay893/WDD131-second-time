@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+:root {
+    --primary-color: lightblue;
+    --secondary-color: blue;
+    --accent-color: white;
+    --text-dark: darkgrey;
+    --text-light: black;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --secondary-font: Mooli, san-serif;
+
+}
+
+
+
+body {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+  }
+  a:link,
+  a:visited {
+    color: var(--accent-color);
+  }
+
+header {
+    color: var(--text-light);
+    background-color: var(--primary-color);
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 20px; /* Add some spacing */
+}
+
+  header p {
+    font-size: 1.3em;
+    margin-bottom: -10px;
+
+  }
+
+  nav {
+    margin: 0 auto;
+    font-size: 1.2em;
+
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-decoration:underline;
+  }
+
+  nav ul li {
+    margin: 8px 0;
+
+  }
+
+  main {
+    background-color: beige;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+
+  }
+
+  .gallery {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+
+  }
+
+  .gallery h1 {
+    font-size: 1.6em;
+
+  }
+
+figure {
+    border-right: solid 5px darkgrey;
+    border-bottom: solid 5px darkgrey;
+}
+
+  img {
+    border: solid 5px white;
+    max-width: 100%;
+    object-fit: cover;
+
+  }
+
+  footer {
+    color: var(--text-light);
+    text-align: center;
+    background-color: var(--primary-color);
+    display: flex;
+
+  }
+
+  .hide {
+	  display: none;
+}
