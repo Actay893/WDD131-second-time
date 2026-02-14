@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
 :root {
-    --primary-color: lightblue;
+    --primary-color: blue;
     --secondary-color: blue;
     --accent-color: white;
     --text-dark: darkgrey;
-    --text-light: black;
+    --text-light: white;
     --primary-font: Arial, Helvetica, sans-serif;
     --secondary-font: Mooli, san-serif;
 
