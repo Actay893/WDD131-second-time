@@ -1,0 +1,146 @@
+body {
+  font-size: 1.2em;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 70%;
+  margin: 0 auto;
+}
+
+/*  Outer form grid: card front takes most space, card back is narrower */
+.form-grid {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 0; /* cards sit flush together to look like one card */
+  margin-bottom: 15px;
+}
+
+/*  Shared card styles  */
+.card {
+  background-color: #c8c8c8;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+/*  Card Front: 3-row grid  */
+.card-front {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+  border-radius: 12px 0 0 12px;
+}
+
+/* Row 1 Total label + chip side by side */
+.card-top {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.card-total {
+  font-weight: bold;
+  font-size: 0.9em;
+}
+
+.chip {
+  width: 40px;
+  height: 28px;
+  background-color: #f5c518;
+  border-radius: 10px;
+}
+
+/* Row 3 Card holder + expiration side by side */
+.card-row3 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  align-items: start;
+}
+
+/* Expiration month + year inputs side by side */
+.exp-inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+/* Card Back magnetic stripe on top, CVV below */
+.card-back {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 10px;
+  background-color: #b0b0b0;
+  border-radius: 0 12px 12px 0;
+  padding: 15px 10px;
+}
+
+.magnetic-stripe {
+  background-color: #000;
+  height: 40px;
+  border-radius: 2px;
+}
+
+.cvv-section input {
+  width: 80px;
+}
+
+/*  Labels  */
+label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.7em;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+}
+
+/*  Inputs  */
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 4px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+}
+
+/*  Submit button  */
+button {
+  display: block;
+  margin-left: auto;
+  background-color: #e0e0e0;
+  color: black;
+  padding: 8px 20px;
+  border: 3px solid #000;
+  border-radius: 4px;
+  border-style: shaded;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d0d0d0;
+}
+
+/*  Errors  */
+.error {
+  white-space: pre-line;
+  color: red;
+  font-size: 0.65em;
+  display: block;
+  min-height: 1em;
+}
+
+/* Utility*/
+.hidden {
+  display: none;
+}
+
+.success {
+  text-align: center;
+  color: green;
+  margin-top: 15px;
+}
