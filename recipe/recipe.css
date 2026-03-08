@@ -1,0 +1,172 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8f0;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Amatic SC', cursive;
+}
+
+/* Header */
+header {
+  background-color: #b5451b;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-area img {
+  width: 50px;
+}
+
+.logo-area h1 {
+  font-size: 2.2rem;
+  color: white;
+  margin: 0;
+}
+
+.search-area {
+  display: flex;
+  align-items: center;
+}
+
+.search-area input {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  font-size: 0.9rem;
+}
+
+.search-area button {
+  padding: 6px 10px;
+  background-color: #8f3414;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.search-area button img {
+  width: 18px;
+  filter: invert(1);
+}
+
+/* Main content */
+main {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.recipe-img {
+  width: 25%;
+  border-radius: 8px;
+}
+
+.recipe-info {
+  background-color: white;
+  padding: 25px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.category {
+  background-color: #f5cdb4;
+  color: #b5451b;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.rating {
+  font-size: 1.1rem;
+}
+
+.recipe-info h2 {
+  font-size: 2.5rem;
+  color: #b5451b;
+  margin: 10px 0 5px;
+}
+
+.recipe-info h3 {
+  font-size: 1.8rem;
+  margin-top: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.recipe-info ul, .recipe-info ol {
+  padding-left: 20px;
+}
+
+.recipe-info li {
+  margin-bottom: 5px;
+}
+
+/* Footer */
+footer {
+  background-color: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.social img {
+  width: 28px;
+  filter: invert(1);
+}
+
+footer a {
+  color: #aaa;
+}
+
+footer p {
+  font-size: 0.8rem;
+  margin: 5px 0;
+}
+
+/* Hide description on mobile */
+@media (max-width: 600px) {
+  .description {
+    display: none;
+  }
+  .main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+    }
+    .recipe-img{
+        grid-row: 1/6;
+        grid-column: 1/2;
+        
+    }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
