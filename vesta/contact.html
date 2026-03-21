@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Vesta | Mission Control</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="vesta.css">
+</head>
+<body>
+    <button id="theme-toggle" class="theme-btn">Switch to Space Mode 🚀</button>
+    <header class="navbar">
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="Vesta_logo_george.png" alt="Vesta Logo" class="main-logo">
+            </a>
+        </div>
+        <nav>
+            <a href="vesta.html">Home</a>
+            <a href="#">Work</a>
+            <a href="contact.html" class="btn-nav">Contact</a>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <section class="contact-header">
+            <h1 class="logo-text" style="font-size: 3rem;">Contact Us</h1>
+            <p class="tagline">Have a question? Send a transmission to Mission Control.</p>
+        </section>
+
+        <form action="https://formspree.io/f/your-unique-id" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Major Tom">
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="_replyto" required placeholder="tom@groundcontrol.com">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required placeholder="What's your message?"></textarea>
+            </div>
+
+            <button type="submit" class="btn-main">Send Transmission</button>
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Vesta Design Studio. All rights reserved.</p>
+    </footer>
+<script src="vesta.js"></script>
+</body>
+</html>
