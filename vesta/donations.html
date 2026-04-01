@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donate — Brooke & Summer's</title>
+   <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+   <link rel="stylesheet" href="vesta1.css"/>
+ 
+ 
+</head>
+ 
+<body>
+ 
+  <!-- =====================
+       NAV BAR
+  ===================== -->
+  <button id="theme-toggle" class="theme-btn">Switch to Space Mode 🚀</button>
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="Vesta main brand.png" alt="Vesta Logo" class="main-logo light-logo">
+      <img src="Vesta main brand dark.png" alt="Vesta Logo" class="main-logo dark-logo">
+    </div>
+    <nav>
+      <a href="vesta.html">Home</a>
+      <a href="donations.html">Donate</a>
+      <a href="contact.html" class="btn-nav">Contact</a>
+    </nav>
+  </header>
+ 
+ 
+  <!-- =====================
+       PAGE INTRO
+  ===================== -->
+  <div class="container">
+    <div class="donations-hero">
+      <h1>Make a Difference</h1>
+      <p>
+        Every item on this list goes directly to someone who needs it.
+        Browse below, pick something that speaks to you, and click
+        <strong>Donate This</strong> to be taken to our donation page.
+      </p>
+ 
+      <!-- Search Bar -->
+      <div class="search-wrapper">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search items... (e.g. shampoo, gift card)"
+          oninput="filterItems()"
+        />
+      </div>
+ 
+      <!-- Category Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="tab-btn active" onclick="setTab(this, 'all')">All Items</button>
+        <button class="tab-btn" onclick="setTab(this, 'hygiene')">Hygiene</button>
+        <button class="tab-btn" onclick="setTab(this, 'household')">Household</button>
+        <button class="tab-btn" onclick="setTab(this, 'gift-card')">Gift Cards</button>
+        <button class="tab-btn" onclick="setTab(this, 'kitchenware')">Kitchenware</button>
+      </div>
+    </div>
+ 
+ 
+    <!-- =====================
+         DONATION CARDS GRID
+         Cards are built and injected here by donations.js
+    ===================== -->
+    <div class="donations-grid" id="donations-grid"></div>
+  </div>
+ 
+ 
+  <!-- =====================
+       FOOTER
+  ===================== -->
+  <div class="footer">
+    <p>© 2026 Brooke &amp; Summer's Nonprofit. All donations are greatly appreciated. 💛</p>
+  </div>
+ 
+ 
+  <!-- =====================
+       JAVASCRIPT
+       This one line loads donations.js from the same folder.
+       All the logic lives in that file now!
+  ===================== -->
+  <script src="vesta.js"></script>
+  <script src="donations.js"></script>
+ 
+</body>
+</html>
+ 
