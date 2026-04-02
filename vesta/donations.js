@@ -215,4 +215,4 @@ function formatCategory(cat) {
  
 // ---- Run on page load ----
 // Wait for the page's HTML to fully load before running anything.
-//document.addEventListener("DOMContentLoaded", renderCards);
+document.addEventListener("DOMContentLoaded", renderCards);
