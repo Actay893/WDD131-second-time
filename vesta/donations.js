@@ -7,11 +7,10 @@
 // ---- YOUR DONATION ITEMS ARRAY ----
 // Each item has:
 //   name        — what shows on the card title
-//   category    — used for the filter tabs (must match a tab exactly)
-//   icon        — any emoji you like
+//   category    — used for the filter tabs 
+//   icon        — any emoji 
 //   description — the short blurb on the card
 //   link        — the URL the "Donate This" button opens
-//               (replace "#donate" with your real donation page URL)
  
 const donationItems = [
  
@@ -216,4 +215,4 @@ function formatCategory(cat) {
  
 // ---- Run on page load ----
 // Wait for the page's HTML to fully load before running anything.
-document.addEventListener("DOMContentLoaded", renderCards);
+//document.addEventListener("DOMContentLoaded", renderCards);
