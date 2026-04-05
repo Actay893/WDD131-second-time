@@ -28,7 +28,7 @@
   /* Text colors — for text on white vs. text on a colored background */
   --headline-color-on-white: var(--primary-color);
   --headline-color-on-color: white;
-  --paragraph-color-on-white: #3E2C1C;        /* darkened for better contrast */
+  --paragraph-color-on-white: var(--primary-color);
   --paragraph-color-on-color: white;
 
   /* Background color used behind paragraph sections */
@@ -242,7 +242,7 @@ nav a:not(.btn-nav):hover {
 
 
 /* Slight 3D pop on the icon and heading inside each card */
-.card h2, .card h3, .card .icon {
+.card h3, .card .icon {
   transform: translateZ(30px);
 }
 
@@ -251,10 +251,9 @@ nav a:not(.btn-nav):hover {
   margin-bottom: 12px;
 }
 
-.card h2, .card h3 {
+.card h3 {
   margin-top: 0;
   margin-bottom: 12px;
-  font-size: 1.1rem; /* keeps card headings small even though they're h2s */
 }
 
 .card p {
@@ -506,6 +505,7 @@ body.space-mode .dark-logo {
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 24px;
   padding-bottom: 60px;
+  min-height: 400px; /* reserves space before JS loads cards, prevents layout shift */
 }
 
 /* ---- DONATION CARD ---- */
