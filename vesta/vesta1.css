@@ -5,8 +5,7 @@
 
 /* ---- SIZING FIX ----
    This just makes sure padding and borders don't
-   accidentally make things wider than they should be.
-   You don't need to touch this, just leave it here. */
+   accidentally make things wider than they should be.*/
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -14,8 +13,7 @@
 
 /* ---- YOUR COLOR & FONT PALETTE ----
    Change your colors and fonts here and they'll
-   update everywhere on the site automatically.
-   Think of these like your brand settings. */
+   update everywhere on the site automatically. */
 :root {
   --primary-color: #6B4E31;        /* main brown */
   --secondary-color: #FDF38E;      /* light yellow background */
@@ -343,7 +341,7 @@ input:focus, textarea:focus {
 /* ---- DARK MODE (Space Mode) ----
    When the dark mode toggle is on, these styles
    override the default colors above.
-   The JS on your page adds the "space-mode" class
+   The JS on the page adds the "space-mode" class
    to the body tag — this CSS handles the rest. */
 body.space-mode {
   --secondary-color: #1a1a1a;
@@ -364,7 +362,7 @@ body.space-mode .card {
 
 
 /* ---- LOGO SWAP FOR DARK MODE ----
-   You can have two logo versions — one light, one dark.
+   logo versions — one light, one dark.
    The correct one shows automatically based on the mode. */
 .dark-logo {
   display: none;

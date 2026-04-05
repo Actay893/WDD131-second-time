@@ -4,7 +4,7 @@
 // =============================================
  
  
-// ---- YOUR DONATION ITEMS ARRAY ----
+// ---- DONATION ITEMS ARRAY ----
 // Each item has:
 //   name        — what shows on the card title
 //   category    — used for the filter tabs 
