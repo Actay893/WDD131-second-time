@@ -242,7 +242,7 @@ nav a:not(.btn-nav):hover {
 
 
 /* Slight 3D pop on the icon and heading inside each card */
-.card h3, .card .icon {
+.card h2, .card h3, .card .icon {
   transform: translateZ(30px);
 }
 
@@ -251,9 +251,11 @@ nav a:not(.btn-nav):hover {
   margin-bottom: 12px;
 }
 
-.card h3 {
+/* font-size keeps card headings compact even though they're h2s now */
+.card h2, .card h3 {
   margin-top: 0;
   margin-bottom: 12px;
+  font-size: 1.1rem;
 }
 
 .card p {
