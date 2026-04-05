@@ -116,24 +116,28 @@ nav a {
   white-space: nowrap;
 }
 
-/* Link hover effect */
-nav a:hover {
+/* Link hover effect — skips .btn-nav so it handles its own hover */
+nav a:not(.btn-nav):hover {
   color: var(--nav-hover-link-color);
   background-color: var(--nav-hover-background-color);
   border-radius: 4px;
 }
 
-/* The "Contact" button in the nav — styled differently to stand out */
+/* The "Contact" button in the nav —
+   looks like a plain link by default, styled box on hover */
 .btn-nav {
-  background-color: var(--primary-color);
-  color: white !important;
+  background-color: transparent;
+  color: var(--primary-color) !important;
+  border: 2px solid transparent;
   border-radius: 6px;
   padding: 6px 14px !important;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
 }
 
 .btn-nav:hover {
-  background-color: var(--accent2-color) !important;
+  background-color: var(--primary-color) !important;
   color: white !important;
+  border-color: var(--primary-color) !important;
 }
 
 /* The dark/light mode toggle bar at the top */
@@ -236,20 +240,6 @@ nav a:hover {
   min-width: 0;
 }
 
-/* The first card is just decorative — hidden on mobile
-   so it doesn't waste space on small screens */
-.card:first-child {
-  display: none;
-}
-
-/* Show the decorative card again on larger screens,
-   with a gradient background */
-@media (min-width: 900px) {
-  .card:first-child {
-    display: block;
-    background: linear-gradient(135deg, var(--accent1-color), var(--primary-color));
-  }
-}
 
 /* Slight 3D pop on the icon and heading inside each card */
 .card h3, .card .icon {
@@ -343,7 +333,7 @@ input:focus, textarea:focus {
   text-align: center;
   padding: 24px 20px;
   background-color: var(--primary-color);
-  color: white;
+  color: var(--accent2-color);
   font-size: 0.9rem;
 }
 
@@ -593,7 +583,38 @@ body.space-mode .dark-logo {
   transform: translateY(-1px);
 }
 
-/* ---- "NO RESULTS" MESSAGE ---- */
+/* Donation cards go dark in space mode */
+body.space-mode .donation-card {
+  background-color: #2a2a2a;
+  border-color: #FDF38E;
+  box-shadow: 6px 6px 0px #FDF38E;
+  color: #e0e0e0;
+}
+
+/* Keep the card text readable in dark mode */
+body.space-mode .donation-card p {
+  color: #b0b0b0;
+}
+
+body.space-mode .donation-card h3 {
+  color: #FDF38E;
+}
+
+/* Category badge in dark mode */
+body.space-mode .card-category {
+  background: #3a3a2a;
+  color: #FDF38E;
+}
+
+/* Donate button in dark mode */
+body.space-mode .donate-btn {
+  background: #FDF38E;
+  color: #3E2C1C;
+}
+
+body.space-mode .donate-btn:hover {
+  background: #f9df5e;
+}
 .no-results {
   display: none;
   text-align: center;
